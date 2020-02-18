@@ -49,8 +49,10 @@ module.exports = (options = {}) => ({
     })
   ],
   resolve: {
+    extensions: ['.js', '.vue', '.json'],
     alias: {
-      '~': resolve(__dirname, 'src')
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
     },
     extensions: ['.js', '.vue', '.json', '.css']
   },

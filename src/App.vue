@@ -1,25 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <el-button @click="startHacking">Start</el-button>
-    </div>
+
+    <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It works!',
-        type: 'success',
-        message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
-        duration: 5000
-      })
-    }
-  }
-}
 </script>
 
 <style>
@@ -27,4 +13,28 @@ export default {
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
+
+body{
+  padding:0;
+  margin:0;
+    overflow-x:hidden;
+}
+div,span{
+  font-family:PingFangSC-Medium,PingFang SC;
+}
+.flex {
+    display: flex;
+  }
+  .justify-between{
+    justify-content: space-between;
+  }
+   .justify-around{
+    justify-content: space-around;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .align-center {
+    align-items: center;
+  }
 </style>
